@@ -1,0 +1,26 @@
+
+body {
+  background-color: rgb(70, 70, 70);
+  color: rgb(240, 240, 240);
+}
+
+h1 {
+  color: rgb(141, 71, 255);
+}
+
+h2 {
+  color: #30e3ca;
+}
+
+.card {
+  background-color: rgb(36, 36, 36);
+  box-shadow: 0 5px 15px rgba(255, 255, 255, 0.1);
+}
+
+.social-icon {
+  color: rgb(220, 220, 220);
+}
+
+#moon {
+  display:none;
+}

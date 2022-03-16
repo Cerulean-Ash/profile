@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Open+Sans&display=swap');
+
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2 {
+  font-family: 'Inter', sans-serif;
+  line-height: 2;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #2688D2;
+}
+
+a:hover {
+  color: rgb(46, 103, 146);
+}
+
+.profile-pic {
+  width: 200px
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+.container {
+  width: 700px;
+  margin: 40px auto;
+}
+
+.card {
+  padding: 40px;
+  margin: 24px 0px;
+  border-radius: 4px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.btn-blue {
+  background-color: #2688D2;
+  color: rgb(240, 240, 240);
+  padding: 12px 24px;
+  border-radius: 4px;
+}
+
+.btn-blue:hover {
+  background-color: rgb(46, 103, 146);
+  color: rgb(240, 240, 240);
+}
+
+.list-inline {
+  list-style: none;
+  padding: 0;
+}
+
+.list-inline li {
+  display: inline-block;
+}
+
+.social-icon {
+  font-size: 32px;
+  margin: 8px 24px;
+}
+
+.theme-container {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 20px;
+  line-height: normal;
+  cursor: pointer;
+}
+
+
+@media (max-width: 960px) {
+  /* For a screen < 960px, this CSS will be read */
+  .container {
+    width: 700px;
+  }
+}
+
+@media (max-width: 720px) {
+  /* For a screen < 720px, this CSS will be read */
+  .container {
+    width: 500px;
+  }
+}
+
+@media (max-width: 540px) {
+  /* For a screen < 540px, this CSS will be read */
+  .container {
+    width: 300px;
+  }
+}
+
+.sun-moon {
+  position: relative;
+  width: 100px;
+  height: 50px;
+  padding: 5px;
+  border-radius: 45px;
+  border: 3px solid #1a237e;
+  background-color: #3f51b5;
+  overflow: hidden;
+  transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.circle {
+  border-radius: 50%;
+  display: inline-block;
+  position: absolute;
+}
+
+.small {
+  width: 35px;
+  height: 35px;
+  background: #3f51b5;
+  left: 21px;
+  top: 10px;
+  transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.large {
+  width: 40px;
+  height: 40px;
+  background: #fff;
+  border: 3px solid #fff;
+  top: 50%;
+  transform: translateY(-50%);
+  left: 7px;
+  transition: all 1s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+
+.sun-moon input {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  margin: 0;
+  opacity: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+
+/* //Change the background color */
+.move {
+    background-color: rgb(240, 240, 240);
+    border-color: #f3909a;
+}
+
+/* //Move the bigger circle */
+.move .large {
+    left: 50px;
+    background: yellow;
+    border-color: orange;
+}
+
+/* //Move the smaller circle */
+.move .small {
+    left: 60px;
+    top: 70px;
+    background-color: rgb(240, 240, 240);
+}
