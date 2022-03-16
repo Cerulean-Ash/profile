@@ -4,12 +4,12 @@ body {
   color: rgb(36, 36, 36);
 }
 
-h1 {
+/* h1 {
   color: rgb(100, 50, 180);
-}
+} */
 
 h2 {
-  color: #2ac2ae;
+  color: #134c92;
 }
 
 .card {
@@ -23,4 +23,16 @@ h2 {
 
 #sun {
   display:none;
+}
+
+.btn-blue {
+  background-color: #740da3;
+}
+
+.btn-blue:hover {
+  background-color: #5a0d7e;
+}
+
+a:hover {
+  color: #5a0d7e;
 }
