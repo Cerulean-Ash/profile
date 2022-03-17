@@ -30,3 +30,21 @@ document.addEventListener('DOMContentLoaded', () => {
 //     }
 //   });
 // });
+
+
+// When the user scrolls the page, execute scrollFunction
+
+window.onscroll = () => {
+  scrollFunction();
+};
+
+function scrollFunction() {
+  // position of scroll bar in pixels
+  let winScroll = document.documentElement.scrollTop; // document.body.scrollTop; ||
+  //get height excluding first page
+  let height =
+    document.documentElement.scrollHeight - // total page height
+    document.documentElement.clientHeight; // how tall the client window is
+  let scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.height = scrolled + "%";
+}

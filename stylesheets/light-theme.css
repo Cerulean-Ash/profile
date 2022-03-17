@@ -4,10 +4,6 @@ body {
   color: rgb(36, 36, 36);
 }
 
-/* h1 {
-  color: rgb(100, 50, 180);
-} */
-
 h2 {
   color: #134c92;
 }
@@ -35,4 +31,12 @@ h2 {
 
 a:hover {
   color: #5a0d7e;
+}
+
+/* The progress bar (scroll indicator) */
+.progress-bar {
+  width: 100%;
+  background: linear-gradient(-70deg, rgb(116, 13, 163) 40%, rgb(1, 88, 143) 80%);
+  height: 0%;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
